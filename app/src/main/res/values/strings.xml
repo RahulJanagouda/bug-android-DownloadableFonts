@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2017 The Android Open Source Project
+<?xml version="1.0" encoding="utf-8"?><!-- Copyright (C) 2017 The Android Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -27,4 +26,6 @@
     <string name="predefined_font">The pre-downloaded font is used for this part to avoid the overhead of the time until the requested font is downloaded. See "src/main/res/font" directory for usage.</string>
     <string name="downloadable_font_applied_text">Typeface of this part is going to be changed when a new font is downloaded. To request a new font, fill the \"Family Name\" (and optionally change other attributes such as width, weight, italic), then tap the \"Request\" button</string>
     <string name="request_failed">Font request failed with reason code: %1$d</string>
+    <string name="title_item_list">Items</string>
+    <string name="title_item_detail">Item Detail</string>
 </resources>

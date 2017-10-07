@@ -1,0 +1,642 @@
+10-07 17:51:12.456 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470] JNI DETECTED ERROR IN APPLICATION: thread Thread[1,tid=10180,Runnable,Thread*=0xab185400,peer=0x746a4000,"main"] using JNI after critical get
+10-07 17:51:12.456 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]     in call to DeleteGlobalRef
+10-07 17:51:12.456 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]     from float android.graphics.Paint.nGetRunAdvance(long, long, char[], int, int, int, int, boolean, int)
+10-07 17:51:12.456 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470] "main" prio=5 tid=1 Runnable
+10-07 17:51:12.456 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   | group="main" sCount=0 dsCount=0 obj=0x746a4000 self=0xab185400
+10-07 17:51:12.456 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   | sysTid=10180 nice=-10 cgrp=default sched=0/0 handle=0xadeac534
+10-07 17:51:12.456 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   | state=R schedstat=( 4424625628 676993169 5030 ) utm=388 stm=53 core=4 HZ=100
+10-07 17:51:12.456 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   | stack=0xbe4b1000-0xbe4b3000 stackSize=8MB
+10-07 17:51:12.456 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   | held mutexes= "mutator lock"(shared held)
+10-07 17:51:12.456 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   native: #00 pc 0034e871  /system/lib/libart.so (_ZN3art15DumpNativeStackERNSt3__113basic_ostreamIcNS0_11char_traitsIcEEEEiP12BacktraceMapPKcPNS_9ArtMethodEPv+128)
+10-07 17:51:12.456 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   native: #01 pc 0032f235  /system/lib/libart.so (_ZNK3art6Thread9DumpStackERNSt3__113basic_ostreamIcNS1_11char_traitsIcEEEEbP12BacktraceMap+308)
+10-07 17:51:12.456 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   native: #02 pc 00238b1d  /system/lib/libart.so (_ZN3art9JavaVMExt8JniAbortEPKcS2_+848)
+10-07 17:51:12.456 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   native: #03 pc 0023903f  /system/lib/libart.so (_ZN3art9JavaVMExt9JniAbortVEPKcS2_St9__va_list+58)
+10-07 17:51:12.456 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   native: #04 pc 000ca31b  /system/lib/libart.so (_ZN3art11ScopedCheck6AbortFEPKcz+46)
+10-07 17:51:12.456 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   native: #05 pc 000c9e87  /system/lib/libart.so (_ZN3art11ScopedCheck11CheckThreadEP7_JNIEnv+234)
+10-07 17:51:12.456 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   native: #06 pc 000c8f1f  /system/lib/libart.so (_ZN3art11ScopedCheck22CheckPossibleHeapValueERNS_18ScopedObjectAccessEcNS_12JniValueTypeE+26)
+10-07 17:51:12.456 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   native: #07 pc 000c83fb  /system/lib/libart.so (_ZN3art11ScopedCheck5CheckERNS_18ScopedObjectAccessEbPKcPNS_12JniValueTypeE+802)
+10-07 17:51:12.456 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   native: #08 pc 000cb40d  /system/lib/libart.so (_ZN3art8CheckJNI9DeleteRefEPKcP7_JNIEnvP8_jobjectNS_15IndirectRefKindE+456)
+10-07 17:51:12.456 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   native: #09 pc 0009e711  /system/lib/libandroid_runtime.so (???)
+10-07 17:51:12.456 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   native: #10 pc 00142243  /system/lib/libskia.so (_ZN6SkDataD1Ev+22)
+10-07 17:51:12.456 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   native: #11 pc 00142253  /system/lib/libskia.so (_ZN6SkDataD0Ev+2)
+10-07 17:51:12.456 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   native: #12 pc 00196635  /system/lib/libskia.so (_ZN14SkMemoryStreamD1Ev+48)
+10-07 17:51:12.456 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   native: #13 pc 00196647  /system/lib/libskia.so (_ZN14SkMemoryStreamD0Ev+2)
+10-07 17:51:12.456 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   native: #14 pc 0014dd6f  /system/lib/libskia.so (???)
+10-07 17:51:12.456 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   native: #15 pc 002b56ab  /system/lib/libskia.so (???)
+10-07 17:51:12.456 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   native: #16 pc 00118a1d  /system/lib/libskia.so (???)
+10-07 17:51:12.456 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   native: #17 pc 0018def9  /system/lib/libskia.so (_ZN15SkScalerContextD1Ev+148)
+10-07 17:51:12.456 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   native: #18 pc 002b1f1b  /system/lib/libskia.so (_ZN24SkScalerContext_FreeTypeD1Ev+90)
+10-07 17:51:12.456 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   native: #19 pc 002b1f67  /system/lib/libskia.so (_ZN24SkScalerContext_FreeTypeD0Ev+2)
+10-07 17:51:12.456 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   native: #20 pc 00150a99  /system/lib/libskia.so (_ZN12SkGlyphCacheD2Ev+64)
+10-07 17:51:12.456 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   native: #21 pc 0015190d  /system/lib/libskia.so (_ZN20SkGlyphCache_Globals13internalPurgeEj+122)
+10-07 17:51:12.456 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   native: #22 pc 00151bbb  /system/lib/libskia.so (_ZN20SkGlyphCache_Globals17attachCacheToHeadEP12SkGlyphCache+68)
+10-07 17:51:12.456 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   native: #23 pc 00147cc9  /system/lib/libskia.so (???)
+10-07 17:51:12.456 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   native: #24 pc 00168b83  /system/lib/libskia.so (_ZNK7SkPaint13getTextWidthsEPKvjPfP6SkRect+918)
+10-07 17:51:12.456 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   native: #25 pc 0001f991  /system/lib/libhwui.so (_ZNK7android15MinikinFontSkia20GetHorizontalAdvanceEjRKNS_12MinikinPaintE+56)
+10-07 17:51:12.456 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   native: #26 pc 0000f1e5  /system/lib/libminikin.so (???)
+10-07 17:51:12.456 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   native: #27 pc 0002b8f8  /system/lib/libharfbuzz_ng.so (???)
+10-07 17:51:12.456 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   native: #28 pc 0000f5ac  /system/lib/libharfbuzz_ng.so (hb_shape_plan_execute+196)
+10-07 17:51:12.456 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   native: #29 pc 0000f094  /system/lib/libharfbuzz_ng.so (hb_shape+64)
+10-07 17:51:12.456 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   native: #30 pc 000107ef  /system/lib/libminikin.so (_ZN7android6Layout11doLayoutRunEPKtjjjbPNS_13LayoutContextE+1606)
+10-07 17:51:12.456 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   native: #31 pc 0000ff39  /system/lib/libminikin.so (???)
+10-07 17:51:12.456 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   native: #32 pc 00010173  /system/lib/libminikin.so (???)
+10-07 17:51:12.456 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   native: #33 pc 0000fe55  /system/lib/libminikin.so (_ZN7android6Layout12doLayoutWordEPKtjjjbPNS_13LayoutContextEjPKNS_14FontCollectionEPS0_Pf+284)
+10-07 17:51:12.456 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   native: #34 pc 0000faf7  /system/lib/libminikin.so (_ZN7android6Layout17doLayoutRunCachedEPKtjjjbPNS_13LayoutContextEjPKNS_14FontCollectionEPS0_Pf+322)
+10-07 17:51:12.456 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   native: #35 pc 0000fc83  /system/lib/libminikin.so (_ZN7android6Layout11measureTextEPKtjjjiRKNS_9FontStyleERKNS_12MinikinPaintEPKNS_14FontCollectionEPf+270)
+10-07 17:51:12.456 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   native: #36 pc 0001fd15  /system/lib/libhwui.so (_ZN7android12MinikinUtils11measureTextEPKNS_5PaintEiPNS_8TypefaceEPKtjjjPf+84)
+10-07 17:51:12.456 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   native: #37 pc 000a1e1f  /system/lib/libandroid_runtime.so (???)
+10-07 17:51:12.456 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   native: #38 pc 002f65e1  /system/framework/arm/boot-framework.oat (Java_android_graphics_Paint_nGetRunAdvance__JJ_3CIIIIZI+180)
+10-07 17:51:12.456 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   at android.graphics.Paint.nGetRunAdvance(Native method)
+10-07 17:51:12.456 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   at android.graphics.Paint.getRunAdvance(Paint.java:2533)
+10-07 17:51:12.457 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   at android.graphics.Paint.getRunAdvance(Paint.java:2565)
+10-07 17:51:12.457 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   at android.text.TextLine.handleText(TextLine.java:719)
+10-07 17:51:12.457 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   at android.text.TextLine.handleRun(TextLine.java:869)
+10-07 17:51:12.457 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   at android.text.TextLine.measureRun(TextLine.java:387)
+10-07 17:51:12.457 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   at android.text.TextLine.measure(TextLine.java:277)
+10-07 17:51:12.457 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   at android.text.TextLine.metrics(TextLine.java:251)
+10-07 17:51:12.457 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   at android.text.BoringLayout.isBoring(BoringLayout.java:310)
+10-07 17:51:12.457 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   at android.widget.TextView.onMeasure(TextView.java:7111)
+10-07 17:51:12.457 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   at android.view.View.measure(View.java:19756)
+10-07 17:51:12.457 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   at android.view.ViewGroup.measureChildWithMargins(ViewGroup.java:6124)
+10-07 17:51:12.457 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   at android.widget.LinearLayout.measureChildBeforeLayout(LinearLayout.java:1464)
+10-07 17:51:12.457 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   at android.widget.LinearLayout.measureHorizontal(LinearLayout.java:1117)
+10-07 17:51:12.457 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   at android.widget.LinearLayout.onMeasure(LinearLayout.java:642)
+10-07 17:51:12.457 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   at android.view.View.measure(View.java:19756)
+10-07 17:51:12.457 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   at android.support.v7.widget.RecyclerView$LayoutManager.measureChildWithMargins(RecyclerView.java:8765)
+10-07 17:51:12.457 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   at android.support.v7.widget.LinearLayoutManager.layoutChunk(LinearLayoutManager.java:1582)
+10-07 17:51:12.457 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   at android.support.v7.widget.LinearLayoutManager.fill(LinearLayoutManager.java:1516)
+10-07 17:51:12.457 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   at android.support.v7.widget.LinearLayoutManager.onLayoutChildren(LinearLayoutManager.java:608)
+10-07 17:51:12.457 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   at android.support.v7.widget.RecyclerView.dispatchLayoutStep2(RecyclerView.java:3693)
+10-07 17:51:12.457 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   at android.support.v7.widget.RecyclerView.dispatchLayout(RecyclerView.java:3410)
+10-07 17:51:12.457 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   at android.support.v7.widget.RecyclerView.onLayout(RecyclerView.java:3962)
+10-07 17:51:12.457 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   at android.view.View.layout(View.java:17535)
+10-07 17:51:12.457 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   at android.view.ViewGroup.layout(ViewGroup.java:5616)
+10-07 17:51:12.457 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   at android.widget.FrameLayout.layoutChildren(FrameLayout.java:323)
+10-07 17:51:12.457 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   at android.widget.FrameLayout.onLayout(FrameLayout.java:261)
+10-07 17:51:12.457 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   at android.view.View.layout(View.java:17535)
+10-07 17:51:12.457 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   at android.view.ViewGroup.layout(ViewGroup.java:5616)
+10-07 17:51:12.457 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   at android.support.design.widget.HeaderScrollingViewBehavior.layoutChild(HeaderScrollingViewBehavior.java:132)
+10-07 17:51:12.457 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   at android.support.design.widget.ViewOffsetBehavior.onLayoutChild(ViewOffsetBehavior.java:42)
+10-07 17:51:12.457 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   at android.support.design.widget.AppBarLayout$ScrollingViewBehavior.onLayoutChild(AppBarLayout.java:1361)
+10-07 17:51:12.457 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   at android.support.design.widget.CoordinatorLayout.onLayout(CoordinatorLayout.java:869)
+10-07 17:51:12.457 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   at android.view.View.layout(View.java:17535)
+10-07 17:51:12.457 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   at android.view.ViewGroup.layout(ViewGroup.java:5616)
+10-07 17:51:12.457 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   at android.widget.FrameLayout.layoutChildren(FrameLayout.java:323)
+10-07 17:51:12.457 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   at android.widget.FrameLayout.onLayout(FrameLayout.java:261)
+10-07 17:51:12.457 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   at android.view.View.layout(View.java:17535)
+10-07 17:51:12.457 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   at android.view.ViewGroup.layout(ViewGroup.java:5616)
+10-07 17:51:12.457 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   at android.widget.LinearLayout.setChildFrame(LinearLayout.java:1741)
+10-07 17:51:12.457 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   at android.widget.LinearLayout.layoutVertical(LinearLayout.java:1585)
+10-07 17:51:12.457 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   at android.widget.LinearLayout.onLayout(LinearLayout.java:1494)
+10-07 17:51:12.457 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   at android.view.View.layout(View.java:17535)
+10-07 17:51:12.457 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   at android.view.ViewGroup.layout(ViewGroup.java:5616)
+10-07 17:51:12.457 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   at android.widget.FrameLayout.layoutChildren(FrameLayout.java:323)
+10-07 17:51:12.457 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   at android.widget.FrameLayout.onLayout(FrameLayout.java:261)
+10-07 17:51:12.457 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   at android.view.View.layout(View.java:17535)
+10-07 17:51:12.457 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   at android.view.ViewGroup.layout(ViewGroup.java:5616)
+10-07 17:51:12.457 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   at android.widget.LinearLayout.setChildFrame(LinearLayout.java:1741)
+10-07 17:51:12.457 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   at android.widget.LinearLayout.layoutVertical(LinearLayout.java:1585)
+10-07 17:51:12.457 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   at android.widget.LinearLayout.onLayout(LinearLayout.java:1494)
+10-07 17:51:12.457 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   at android.view.View.layout(View.java:17535)
+10-07 17:51:12.457 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   at android.view.ViewGroup.layout(ViewGroup.java:5616)
+10-07 17:51:12.457 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   at android.widget.FrameLayout.layoutChildren(FrameLayout.java:323)
+10-07 17:51:12.457 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   at android.widget.FrameLayout.onLayout(FrameLayout.java:261)
+10-07 17:51:12.457 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   at com.android.internal.policy.DecorView.onLayout(DecorView.java:724)
+10-07 17:51:12.457 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   at android.view.View.layout(View.java:17535)
+10-07 17:51:12.457 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   at android.view.ViewGroup.layout(ViewGroup.java:5616)
+10-07 17:51:12.457 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   at android.view.ViewRootImpl.performLayout(ViewRootImpl.java:2354)
+10-07 17:51:12.457 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   at android.view.ViewRootImpl.performTraversals(ViewRootImpl.java:2081)
+10-07 17:51:12.457 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   at android.view.ViewRootImpl.doTraversal(ViewRootImpl.java:1258)
+10-07 17:51:12.457 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   at android.view.ViewRootImpl$TraversalRunnable.run(ViewRootImpl.java:6348)
+10-07 17:51:12.457 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   at android.view.Choreographer$CallbackRecord.run(Choreographer.java:871)
+10-07 17:51:12.457 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   at android.view.Choreographer.doCallbacks(Choreographer.java:683)
+10-07 17:51:12.457 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   at android.view.Choreographer.doFrame(Choreographer.java:619)
+10-07 17:51:12.457 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   at android.view.Choreographer$FrameDisplayEventReceiver.run(Choreographer.java:857)
+10-07 17:51:12.457 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   at android.os.Handler.handleCallback(Handler.java:751)
+10-07 17:51:12.457 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   at android.os.Handler.dispatchMessage(Handler.java:95)
+10-07 17:51:12.457 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   at android.os.Looper.loop(Looper.java:154)
+10-07 17:51:12.457 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   at android.app.ActivityThread.main(ActivityThread.java:6123)
+10-07 17:51:12.457 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   at java.lang.reflect.Method.invoke!(Native method)
+10-07 17:51:12.457 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:867)
+10-07 17:51:12.457 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]   at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:757)
+10-07 17:51:12.457 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/java_vm_ext.cc:470]
+10-07 17:51:12.612 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441] Runtime aborting...
+10-07 17:51:12.612 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441] Aborting thread:
+10-07 17:51:12.612 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441] "main" prio=10 tid=1 Native
+10-07 17:51:12.612 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   | group="" sCount=0 dsCount=0 obj=0x746a4000 self=0xab185400
+10-07 17:51:12.612 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   | sysTid=10180 nice=-10 cgrp=default sched=0/0 handle=0xadeac534
+10-07 17:51:12.612 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   | state=R schedstat=( 4478555521 680802649 5055 ) utm=391 stm=55 core=3 HZ=100
+10-07 17:51:12.612 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   | stack=0xbe4b1000-0xbe4b3000 stackSize=8MB
+10-07 17:51:12.612 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   | held mutexes= "abort lock"
+10-07 17:51:12.612 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #00 pc 0034e871  /system/lib/libart.so (_ZN3art15DumpNativeStackERNSt3__113basic_ostreamIcNS0_11char_traitsIcEEEEiP12BacktraceMapPKcPNS_9ArtMethodEPv+128)
+10-07 17:51:12.613 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #01 pc 0032f235  /system/lib/libart.so (_ZNK3art6Thread9DumpStackERNSt3__113basic_ostreamIcNS1_11char_traitsIcEEEEbP12BacktraceMap+308)
+10-07 17:51:12.613 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #02 pc 003223c9  /system/lib/libart.so (_ZNK3art10AbortState10DumpThreadERNSt3__113basic_ostreamIcNS1_11char_traitsIcEEEEPNS_6ThreadE+24)
+10-07 17:51:12.613 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #03 pc 00322251  /system/lib/libart.so (_ZNK3art10AbortState4DumpERNSt3__113basic_ostreamIcNS1_11char_traitsIcEEEE+424)
+10-07 17:51:12.613 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #04 pc 00318f6f  /system/lib/libart.so (_ZN3art7Runtime5AbortEv+90)
+10-07 17:51:12.613 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #05 pc 000b4979  /system/lib/libart.so (_ZN3art10LogMessageD2Ev+864)
+10-07 17:51:12.613 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #06 pc 00238e4d  /system/lib/libart.so (_ZN3art9JavaVMExt8JniAbortEPKcS2_+1664)
+10-07 17:51:12.613 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #07 pc 0023903f  /system/lib/libart.so (_ZN3art9JavaVMExt9JniAbortVEPKcS2_St9__va_list+58)
+10-07 17:51:12.613 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #08 pc 000ca31b  /system/lib/libart.so (_ZN3art11ScopedCheck6AbortFEPKcz+46)
+10-07 17:51:12.613 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #09 pc 000c9e87  /system/lib/libart.so (_ZN3art11ScopedCheck11CheckThreadEP7_JNIEnv+234)
+10-07 17:51:12.613 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #10 pc 000c8f1f  /system/lib/libart.so (_ZN3art11ScopedCheck22CheckPossibleHeapValueERNS_18ScopedObjectAccessEcNS_12JniValueTypeE+26)
+10-07 17:51:12.613 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #11 pc 000c83fb  /system/lib/libart.so (_ZN3art11ScopedCheck5CheckERNS_18ScopedObjectAccessEbPKcPNS_12JniValueTypeE+802)
+10-07 17:51:12.613 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #12 pc 000cb40d  /system/lib/libart.so (_ZN3art8CheckJNI9DeleteRefEPKcP7_JNIEnvP8_jobjectNS_15IndirectRefKindE+456)
+10-07 17:51:12.613 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #13 pc 0009e711  /system/lib/libandroid_runtime.so (???)
+10-07 17:51:12.613 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #14 pc 00142243  /system/lib/libskia.so (_ZN6SkDataD1Ev+22)
+10-07 17:51:12.613 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #15 pc 00142253  /system/lib/libskia.so (_ZN6SkDataD0Ev+2)
+10-07 17:51:12.613 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #16 pc 00196635  /system/lib/libskia.so (_ZN14SkMemoryStreamD1Ev+48)
+10-07 17:51:12.613 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #17 pc 00196647  /system/lib/libskia.so (_ZN14SkMemoryStreamD0Ev+2)
+10-07 17:51:12.613 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #18 pc 0014dd6f  /system/lib/libskia.so (???)
+10-07 17:51:12.613 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #19 pc 002b56ab  /system/lib/libskia.so (???)
+10-07 17:51:12.613 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #20 pc 00118a1d  /system/lib/libskia.so (???)
+10-07 17:51:12.613 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #21 pc 0018def9  /system/lib/libskia.so (_ZN15SkScalerContextD1Ev+148)
+10-07 17:51:12.613 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #22 pc 002b1f1b  /system/lib/libskia.so (_ZN24SkScalerContext_FreeTypeD1Ev+90)
+10-07 17:51:12.613 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #23 pc 002b1f67  /system/lib/libskia.so (_ZN24SkScalerContext_FreeTypeD0Ev+2)
+10-07 17:51:12.613 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #24 pc 00150a99  /system/lib/libskia.so (_ZN12SkGlyphCacheD2Ev+64)
+10-07 17:51:12.613 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #25 pc 0015190d  /system/lib/libskia.so (_ZN20SkGlyphCache_Globals13internalPurgeEj+122)
+10-07 17:51:12.613 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #26 pc 00151bbb  /system/lib/libskia.so (_ZN20SkGlyphCache_Globals17attachCacheToHeadEP12SkGlyphCache+68)
+10-07 17:51:12.613 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #27 pc 00147cc9  /system/lib/libskia.so (???)
+10-07 17:51:12.613 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #28 pc 00168b83  /system/lib/libskia.so (_ZNK7SkPaint13getTextWidthsEPKvjPfP6SkRect+918)
+10-07 17:51:12.613 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #29 pc 0001f991  /system/lib/libhwui.so (_ZNK7android15MinikinFontSkia20GetHorizontalAdvanceEjRKNS_12MinikinPaintE+56)
+10-07 17:51:12.613 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #30 pc 0000f1e5  /system/lib/libminikin.so (???)
+10-07 17:51:12.613 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #31 pc 0002b8f8  /system/lib/libharfbuzz_ng.so (???)
+10-07 17:51:12.613 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #32 pc 0000f5ac  /system/lib/libharfbuzz_ng.so (hb_shape_plan_execute+196)
+10-07 17:51:12.613 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #33 pc 0000f094  /system/lib/libharfbuzz_ng.so (hb_shape+64)
+10-07 17:51:12.613 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #34 pc 000107ef  /system/lib/libminikin.so (_ZN7android6Layout11doLayoutRunEPKtjjjbPNS_13LayoutContextE+1606)
+10-07 17:51:12.613 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #35 pc 0000ff39  /system/lib/libminikin.so (???)
+10-07 17:51:12.613 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #36 pc 00010173  /system/lib/libminikin.so (???)
+10-07 17:51:12.613 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #37 pc 0000fe55  /system/lib/libminikin.so (_ZN7android6Layout12doLayoutWordEPKtjjjbPNS_13LayoutContextEjPKNS_14FontCollectionEPS0_Pf+284)
+10-07 17:51:12.613 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #38 pc 0000faf7  /system/lib/libminikin.so (_ZN7android6Layout17doLayoutRunCachedEPKtjjjbPNS_13LayoutContextEjPKNS_14FontCollectionEPS0_Pf+322)
+10-07 17:51:12.613 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #39 pc 0000fc83  /system/lib/libminikin.so (_ZN7android6Layout11measureTextEPKtjjjiRKNS_9FontStyleERKNS_12MinikinPaintEPKNS_14FontCollectionEPf+270)
+10-07 17:51:12.613 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #40 pc 0001fd15  /system/lib/libhwui.so (_ZN7android12MinikinUtils11measureTextEPKNS_5PaintEiPNS_8TypefaceEPKtjjjPf+84)
+10-07 17:51:12.613 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #41 pc 000a1e1f  /system/lib/libandroid_runtime.so (???)
+10-07 17:51:12.613 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #42 pc 002f65e1  /system/framework/arm/boot-framework.oat (???)
+10-07 17:51:12.613 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.graphics.Paint.nGetRunAdvance(Native method)
+10-07 17:51:12.613 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.graphics.Paint.getRunAdvance(Paint.java:2533)
+10-07 17:51:12.613 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.graphics.Paint.getRunAdvance(Paint.java:2565)
+10-07 17:51:12.613 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.text.TextLine.handleText(TextLine.java:719)
+10-07 17:51:12.613 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.text.TextLine.handleRun(TextLine.java:869)
+10-07 17:51:12.613 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.text.TextLine.measureRun(TextLine.java:387)
+10-07 17:51:12.613 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.text.TextLine.measure(TextLine.java:277)
+10-07 17:51:12.613 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.text.TextLine.metrics(TextLine.java:251)
+10-07 17:51:12.613 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.text.BoringLayout.isBoring(BoringLayout.java:310)
+10-07 17:51:12.613 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.widget.TextView.onMeasure(TextView.java:7111)
+10-07 17:51:12.613 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.view.View.measure(View.java:19756)
+10-07 17:51:12.613 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.view.ViewGroup.measureChildWithMargins(ViewGroup.java:6124)
+10-07 17:51:12.613 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.widget.LinearLayout.measureChildBeforeLayout(LinearLayout.java:1464)
+10-07 17:51:12.613 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.widget.LinearLayout.measureHorizontal(LinearLayout.java:1117)
+10-07 17:51:12.613 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.widget.LinearLayout.onMeasure(LinearLayout.java:642)
+10-07 17:51:12.613 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.view.View.measure(View.java:19756)
+10-07 17:51:12.613 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.support.v7.widget.RecyclerView$LayoutManager.measureChildWithMargins(RecyclerView.java:8765)
+10-07 17:51:12.613 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.support.v7.widget.LinearLayoutManager.layoutChunk(LinearLayoutManager.java:1582)
+10-07 17:51:12.613 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.support.v7.widget.LinearLayoutManager.fill(LinearLayoutManager.java:1516)
+10-07 17:51:12.613 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.support.v7.widget.LinearLayoutManager.onLayoutChildren(LinearLayoutManager.java:608)
+10-07 17:51:12.613 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.support.v7.widget.RecyclerView.dispatchLayoutStep2(RecyclerView.java:3693)
+10-07 17:51:12.613 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.support.v7.widget.RecyclerView.dispatchLayout(RecyclerView.java:3410)
+10-07 17:51:12.613 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.support.v7.widget.RecyclerView.onLayout(RecyclerView.java:3962)
+10-07 17:51:12.613 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.view.View.layout(View.java:17535)
+10-07 17:51:12.613 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.view.ViewGroup.layout(ViewGroup.java:5616)
+10-07 17:51:12.613 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.widget.FrameLayout.layoutChildren(FrameLayout.java:323)
+10-07 17:51:12.613 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.widget.FrameLayout.onLayout(FrameLayout.java:261)
+10-07 17:51:12.613 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.view.View.layout(View.java:17535)
+10-07 17:51:12.613 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.view.ViewGroup.layout(ViewGroup.java:5616)
+10-07 17:51:12.613 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.support.design.widget.HeaderScrollingViewBehavior.layoutChild(HeaderScrollingViewBehavior.java:132)
+10-07 17:51:12.613 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.support.design.widget.ViewOffsetBehavior.onLayoutChild(ViewOffsetBehavior.java:42)
+10-07 17:51:12.613 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.support.design.widget.AppBarLayout$ScrollingViewBehavior.onLayoutChild(AppBarLayout.java:1361)
+10-07 17:51:12.613 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.support.design.widget.CoordinatorLayout.onLayout(CoordinatorLayout.java:869)
+10-07 17:51:12.613 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.view.View.layout(View.java:17535)
+10-07 17:51:12.613 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.view.ViewGroup.layout(ViewGroup.java:5616)
+10-07 17:51:12.613 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.widget.FrameLayout.layoutChildren(FrameLayout.java:323)
+10-07 17:51:12.613 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.widget.FrameLayout.onLayout(FrameLayout.java:261)
+10-07 17:51:12.613 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.view.View.layout(View.java:17535)
+10-07 17:51:12.613 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.view.ViewGroup.layout(ViewGroup.java:5616)
+10-07 17:51:12.613 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.widget.LinearLayout.setChildFrame(LinearLayout.java:1741)
+10-07 17:51:12.613 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.widget.LinearLayout.layoutVertical(LinearLayout.java:1585)
+10-07 17:51:12.613 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.widget.LinearLayout.onLayout(LinearLayout.java:1494)
+10-07 17:51:12.613 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.view.View.layout(View.java:17535)
+10-07 17:51:12.613 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.view.ViewGroup.layout(ViewGroup.java:5616)
+10-07 17:51:12.613 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.widget.FrameLayout.layoutChildren(FrameLayout.java:323)
+10-07 17:51:12.613 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.widget.FrameLayout.onLayout(FrameLayout.java:261)
+10-07 17:51:12.613 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.view.View.layout(View.java:17535)
+10-07 17:51:12.613 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.view.ViewGroup.layout(ViewGroup.java:5616)
+10-07 17:51:12.613 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.widget.LinearLayout.setChildFrame(LinearLayout.java:1741)
+10-07 17:51:12.613 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.widget.LinearLayout.layoutVertical(LinearLayout.java:1585)
+10-07 17:51:12.613 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.widget.LinearLayout.onLayout(LinearLayout.java:1494)
+10-07 17:51:12.613 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.view.View.layout(View.java:17535)
+10-07 17:51:12.613 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.view.ViewGroup.layout(ViewGroup.java:5616)
+10-07 17:51:12.613 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.widget.FrameLayout.layoutChildren(FrameLayout.java:323)
+10-07 17:51:12.613 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.widget.FrameLayout.onLayout(FrameLayout.java:261)
+10-07 17:51:12.614 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at com.android.internal.policy.DecorView.onLayout(DecorView.java:724)
+10-07 17:51:12.614 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.view.View.layout(View.java:17535)
+10-07 17:51:12.614 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.view.ViewGroup.layout(ViewGroup.java:5616)
+10-07 17:51:12.614 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.view.ViewRootImpl.performLayout(ViewRootImpl.java:2354)
+10-07 17:51:12.614 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.view.ViewRootImpl.performTraversals(ViewRootImpl.java:2081)
+10-07 17:51:12.614 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.view.ViewRootImpl.doTraversal(ViewRootImpl.java:1258)
+10-07 17:51:12.614 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.view.ViewRootImpl$TraversalRunnable.run(ViewRootImpl.java:6348)
+10-07 17:51:12.614 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.view.Choreographer$CallbackRecord.run(Choreographer.java:871)
+10-07 17:51:12.614 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.view.Choreographer.doCallbacks(Choreographer.java:683)
+10-07 17:51:12.614 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.view.Choreographer.doFrame(Choreographer.java:619)
+10-07 17:51:12.614 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.view.Choreographer$FrameDisplayEventReceiver.run(Choreographer.java:857)
+10-07 17:51:12.614 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.os.Handler.handleCallback(Handler.java:751)
+10-07 17:51:12.614 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.os.Handler.dispatchMessage(Handler.java:95)
+10-07 17:51:12.614 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.os.Looper.loop(Looper.java:154)
+10-07 17:51:12.614 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.app.ActivityThread.main(ActivityThread.java:6123)
+10-07 17:51:12.614 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at java.lang.reflect.Method.invoke!(Native method)
+10-07 17:51:12.614 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:867)
+10-07 17:51:12.614 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:757)
+10-07 17:51:12.614 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441] Dumping all threads without appropriate locks held: thread list lock mutator lock
+10-07 17:51:12.614 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441] All threads:
+10-07 17:51:12.614 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441] DALVIK THREADS (19):
+10-07 17:51:12.614 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441] "main" prio=10 tid=1 Runnable
+10-07 17:51:12.614 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   | group="" sCount=0 dsCount=0 obj=0x746a4000 self=0xab185400
+10-07 17:51:12.614 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   | sysTid=10180 nice=-10 cgrp=default sched=0/0 handle=0xadeac534
+10-07 17:51:12.614 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   | state=R schedstat=( 4548007654 681134160 5072 ) utm=396 stm=57 core=0 HZ=100
+10-07 17:51:12.614 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   | stack=0xbe4b1000-0xbe4b3000 stackSize=8MB
+10-07 17:51:12.614 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   | held mutexes= "abort lock" "mutator lock"(shared held)
+10-07 17:51:12.614 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #00 pc 0034e871  /system/lib/libart.so (_ZN3art15DumpNativeStackERNSt3__113basic_ostreamIcNS0_11char_traitsIcEEEEiP12BacktraceMapPKcPNS_9ArtMethodEPv+128)
+10-07 17:51:12.614 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #01 pc 0032f235  /system/lib/libart.so (_ZNK3art6Thread9DumpStackERNSt3__113basic_ostreamIcNS1_11char_traitsIcEEEEbP12BacktraceMap+308)
+10-07 17:51:12.614 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #02 pc 00341091  /system/lib/libart.so (_ZN3art14DumpCheckpoint3RunEPNS_6ThreadE+620)
+10-07 17:51:12.614 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #03 pc 0033b09b  /system/lib/libart.so (_ZN3art10ThreadList13RunCheckpointEPNS_7ClosureE+330)
+10-07 17:51:12.614 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #04 pc 0033adc1  /system/lib/libart.so (_ZN3art10ThreadList4DumpERNSt3__113basic_ostreamIcNS1_11char_traitsIcEEEEb+180)
+10-07 17:51:12.614 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #05 pc 0032221d  /system/lib/libart.so (_ZNK3art10AbortState4DumpERNSt3__113basic_ostreamIcNS1_11char_traitsIcEEEE+372)
+10-07 17:51:12.614 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #06 pc 00318f6f  /system/lib/libart.so (_ZN3art7Runtime5AbortEv+90)
+10-07 17:51:12.614 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #07 pc 000b4979  /system/lib/libart.so (_ZN3art10LogMessageD2Ev+864)
+10-07 17:51:12.614 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #08 pc 00238e4d  /system/lib/libart.so (_ZN3art9JavaVMExt8JniAbortEPKcS2_+1664)
+10-07 17:51:12.614 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #09 pc 0023903f  /system/lib/libart.so (_ZN3art9JavaVMExt9JniAbortVEPKcS2_St9__va_list+58)
+10-07 17:51:12.614 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #10 pc 000ca31b  /system/lib/libart.so (_ZN3art11ScopedCheck6AbortFEPKcz+46)
+10-07 17:51:12.614 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #11 pc 000c9e87  /system/lib/libart.so (_ZN3art11ScopedCheck11CheckThreadEP7_JNIEnv+234)
+10-07 17:51:12.614 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #12 pc 000c8f1f  /system/lib/libart.so (_ZN3art11ScopedCheck22CheckPossibleHeapValueERNS_18ScopedObjectAccessEcNS_12JniValueTypeE+26)
+10-07 17:51:12.614 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #13 pc 000c83fb  /system/lib/libart.so (_ZN3art11ScopedCheck5CheckERNS_18ScopedObjectAccessEbPKcPNS_12JniValueTypeE+802)
+10-07 17:51:12.614 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #14 pc 000cb40d  /system/lib/libart.so (_ZN3art8CheckJNI9DeleteRefEPKcP7_JNIEnvP8_jobjectNS_15IndirectRefKindE+456)
+10-07 17:51:12.614 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #15 pc 0009e711  /system/lib/libandroid_runtime.so (???)
+10-07 17:51:12.614 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #16 pc 00142243  /system/lib/libskia.so (_ZN6SkDataD1Ev+22)
+10-07 17:51:12.614 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #17 pc 00142253  /system/lib/libskia.so (_ZN6SkDataD0Ev+2)
+10-07 17:51:12.614 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #18 pc 00196635  /system/lib/libskia.so (_ZN14SkMemoryStreamD1Ev+48)
+10-07 17:51:12.614 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #19 pc 00196647  /system/lib/libskia.so (_ZN14SkMemoryStreamD0Ev+2)
+10-07 17:51:12.614 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #20 pc 0014dd6f  /system/lib/libskia.so (???)
+10-07 17:51:12.614 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #21 pc 002b56ab  /system/lib/libskia.so (???)
+10-07 17:51:12.614 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #22 pc 00118a1d  /system/lib/libskia.so (???)
+10-07 17:51:12.614 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #23 pc 0018def9  /system/lib/libskia.so (_ZN15SkScalerContextD1Ev+148)
+10-07 17:51:12.614 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #24 pc 002b1f1b  /system/lib/libskia.so (_ZN24SkScalerContext_FreeTypeD1Ev+90)
+10-07 17:51:12.614 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #25 pc 002b1f67  /system/lib/libskia.so (_ZN24SkScalerContext_FreeTypeD0Ev+2)
+10-07 17:51:12.614 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #26 pc 00150a99  /system/lib/libskia.so (_ZN12SkGlyphCacheD2Ev+64)
+10-07 17:51:12.614 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #27 pc 0015190d  /system/lib/libskia.so (_ZN20SkGlyphCache_Globals13internalPurgeEj+122)
+10-07 17:51:12.614 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #28 pc 00151bbb  /system/lib/libskia.so (_ZN20SkGlyphCache_Globals17attachCacheToHeadEP12SkGlyphCache+68)
+10-07 17:51:12.614 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #29 pc 00147cc9  /system/lib/libskia.so (???)
+10-07 17:51:12.614 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #30 pc 00168b83  /system/lib/libskia.so (_ZNK7SkPaint13getTextWidthsEPKvjPfP6SkRect+918)
+10-07 17:51:12.614 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #31 pc 0001f991  /system/lib/libhwui.so (_ZNK7android15MinikinFontSkia20GetHorizontalAdvanceEjRKNS_12MinikinPaintE+56)
+10-07 17:51:12.614 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #32 pc 0000f1e5  /system/lib/libminikin.so (???)
+10-07 17:51:12.614 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #33 pc 0002b8f8  /system/lib/libharfbuzz_ng.so (???)
+10-07 17:51:12.614 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #34 pc 0000f5ac  /system/lib/libharfbuzz_ng.so (hb_shape_plan_execute+196)
+10-07 17:51:12.614 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #35 pc 0000f094  /system/lib/libharfbuzz_ng.so (hb_shape+64)
+10-07 17:51:12.614 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #36 pc 000107ef  /system/lib/libminikin.so (_ZN7android6Layout11doLayoutRunEPKtjjjbPNS_13LayoutContextE+1606)
+10-07 17:51:12.614 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #37 pc 0000ff39  /system/lib/libminikin.so (???)
+10-07 17:51:12.614 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #38 pc 00010173  /system/lib/libminikin.so (???)
+10-07 17:51:12.614 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #39 pc 0000fe55  /system/lib/libminikin.so (_ZN7android6Layout12doLayoutWordEPKtjjjbPNS_13LayoutContextEjPKNS_14FontCollectionEPS0_Pf+284)
+10-07 17:51:12.614 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #40 pc 0000faf7  /system/lib/libminikin.so (_ZN7android6Layout17doLayoutRunCachedEPKtjjjbPNS_13LayoutContextEjPKNS_14FontCollectionEPS0_Pf+322)
+10-07 17:51:12.614 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #41 pc 0000fc83  /system/lib/libminikin.so (_ZN7android6Layout11measureTextEPKtjjjiRKNS_9FontStyleERKNS_12MinikinPaintEPKNS_14FontCollectionEPf+270)
+10-07 17:51:12.614 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #42 pc 0001fd15  /system/lib/libhwui.so (_ZN7android12MinikinUtils11measureTextEPKNS_5PaintEiPNS_8TypefaceEPKtjjjPf+84)
+10-07 17:51:12.614 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #43 pc 000a1e1f  /system/lib/libandroid_runtime.so (???)
+10-07 17:51:12.614 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #44 pc 002f65e1  /system/framework/arm/boot-framework.oat (Java_android_graphics_Paint_nGetRunAdvance__JJ_3CIIIIZI+180)
+10-07 17:51:12.614 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.graphics.Paint.nGetRunAdvance(Native method)
+10-07 17:51:12.614 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.graphics.Paint.getRunAdvance(Paint.java:2533)
+10-07 17:51:12.614 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.graphics.Paint.getRunAdvance(Paint.java:2565)
+10-07 17:51:12.614 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.text.TextLine.handleText(TextLine.java:719)
+10-07 17:51:12.614 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.text.TextLine.handleRun(TextLine.java:869)
+10-07 17:51:12.614 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.text.TextLine.measureRun(TextLine.java:387)
+10-07 17:51:12.614 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.text.TextLine.measure(TextLine.java:277)
+10-07 17:51:12.614 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.text.TextLine.metrics(TextLine.java:251)
+10-07 17:51:12.614 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.text.BoringLayout.isBoring(BoringLayout.java:310)
+10-07 17:51:12.614 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.widget.TextView.onMeasure(TextView.java:7111)
+10-07 17:51:12.614 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.view.View.measure(View.java:19756)
+10-07 17:51:12.614 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.view.ViewGroup.measureChildWithMargins(ViewGroup.java:6124)
+10-07 17:51:12.614 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.widget.LinearLayout.measureChildBeforeLayout(LinearLayout.java:1464)
+10-07 17:51:12.614 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.widget.LinearLayout.measureHorizontal(LinearLayout.java:1117)
+10-07 17:51:12.614 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.widget.LinearLayout.onMeasure(LinearLayout.java:642)
+10-07 17:51:12.614 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.view.View.measure(View.java:19756)
+10-07 17:51:12.614 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.support.v7.widget.RecyclerView$LayoutManager.measureChildWithMargins(RecyclerView.java:8765)
+10-07 17:51:12.614 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.support.v7.widget.LinearLayoutManager.layoutChunk(LinearLayoutManager.java:1582)
+10-07 17:51:12.614 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.support.v7.widget.LinearLayoutManager.fill(LinearLayoutManager.java:1516)
+10-07 17:51:12.614 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.support.v7.widget.LinearLayoutManager.onLayoutChildren(LinearLayoutManager.java:608)
+10-07 17:51:12.614 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.support.v7.widget.RecyclerView.dispatchLayoutStep2(RecyclerView.java:3693)
+10-07 17:51:12.614 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.support.v7.widget.RecyclerView.dispatchLayout(RecyclerView.java:3410)
+10-07 17:51:12.614 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.support.v7.widget.RecyclerView.onLayout(RecyclerView.java:3962)
+10-07 17:51:12.614 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.view.View.layout(View.java:17535)
+10-07 17:51:12.615 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.view.ViewGroup.layout(ViewGroup.java:5616)
+10-07 17:51:12.615 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.widget.FrameLayout.layoutChildren(FrameLayout.java:323)
+10-07 17:51:12.615 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.widget.FrameLayout.onLayout(FrameLayout.java:261)
+10-07 17:51:12.615 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.view.View.layout(View.java:17535)
+10-07 17:51:12.615 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.view.ViewGroup.layout(ViewGroup.java:5616)
+10-07 17:51:12.615 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.support.design.widget.HeaderScrollingViewBehavior.layoutChild(HeaderScrollingViewBehavior.java:132)
+10-07 17:51:12.615 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.support.design.widget.ViewOffsetBehavior.onLayoutChild(ViewOffsetBehavior.java:42)
+10-07 17:51:12.615 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.support.design.widget.AppBarLayout$ScrollingViewBehavior.onLayoutChild(AppBarLayout.java:1361)
+10-07 17:51:12.615 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.support.design.widget.CoordinatorLayout.onLayout(CoordinatorLayout.java:869)
+10-07 17:51:12.615 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.view.View.layout(View.java:17535)
+10-07 17:51:12.615 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.view.ViewGroup.layout(ViewGroup.java:5616)
+10-07 17:51:12.615 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.widget.FrameLayout.layoutChildren(FrameLayout.java:323)
+10-07 17:51:12.615 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.widget.FrameLayout.onLayout(FrameLayout.java:261)
+10-07 17:51:12.615 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.view.View.layout(View.java:17535)
+10-07 17:51:12.615 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.view.ViewGroup.layout(ViewGroup.java:5616)
+10-07 17:51:12.615 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.widget.LinearLayout.setChildFrame(LinearLayout.java:1741)
+10-07 17:51:12.615 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.widget.LinearLayout.layoutVertical(LinearLayout.java:1585)
+10-07 17:51:12.615 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.widget.LinearLayout.onLayout(LinearLayout.java:1494)
+10-07 17:51:12.615 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.view.View.layout(View.java:17535)
+10-07 17:51:12.615 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.view.ViewGroup.layout(ViewGroup.java:5616)
+10-07 17:51:12.615 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.widget.FrameLayout.layoutChildren(FrameLayout.java:323)
+10-07 17:51:12.615 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.widget.FrameLayout.onLayout(FrameLayout.java:261)
+10-07 17:51:12.615 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.view.View.layout(View.java:17535)
+10-07 17:51:12.615 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.view.ViewGroup.layout(ViewGroup.java:5616)
+10-07 17:51:12.615 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.widget.LinearLayout.setChildFrame(LinearLayout.java:1741)
+10-07 17:51:12.615 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.widget.LinearLayout.layoutVertical(LinearLayout.java:1585)
+10-07 17:51:12.615 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.widget.LinearLayout.onLayout(LinearLayout.java:1494)
+10-07 17:51:12.615 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.view.View.layout(View.java:17535)
+10-07 17:51:12.615 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.view.ViewGroup.layout(ViewGroup.java:5616)
+10-07 17:51:12.615 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.widget.FrameLayout.layoutChildren(FrameLayout.java:323)
+10-07 17:51:12.615 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.widget.FrameLayout.onLayout(FrameLayout.java:261)
+10-07 17:51:12.615 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at com.android.internal.policy.DecorView.onLayout(DecorView.java:724)
+10-07 17:51:12.615 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.view.View.layout(View.java:17535)
+10-07 17:51:12.615 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.view.ViewGroup.layout(ViewGroup.java:5616)
+10-07 17:51:12.615 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.view.ViewRootImpl.performLayout(ViewRootImpl.java:2354)
+10-07 17:51:12.615 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.view.ViewRootImpl.performTraversals(ViewRootImpl.java:2081)
+10-07 17:51:12.615 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.view.ViewRootImpl.doTraversal(ViewRootImpl.java:1258)
+10-07 17:51:12.615 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.view.ViewRootImpl$TraversalRunnable.run(ViewRootImpl.java:6348)
+10-07 17:51:12.615 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.view.Choreographer$CallbackRecord.run(Choreographer.java:871)
+10-07 17:51:12.615 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.view.Choreographer.doCallbacks(Choreographer.java:683)
+10-07 17:51:12.615 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.view.Choreographer.doFrame(Choreographer.java:619)
+10-07 17:51:12.615 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.view.Choreographer$FrameDisplayEventReceiver.run(Choreographer.java:857)
+10-07 17:51:12.615 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.os.Handler.handleCallback(Handler.java:751)
+10-07 17:51:12.615 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.os.Handler.dispatchMessage(Handler.java:95)
+10-07 17:51:12.615 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.os.Looper.loop(Looper.java:154)
+10-07 17:51:12.615 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at android.app.ActivityThread.main(ActivityThread.java:6123)
+10-07 17:51:12.615 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at java.lang.reflect.Method.invoke!(Native method)
+10-07 17:51:12.615 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:867)
+10-07 17:51:12.615 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:757)
+10-07 17:51:12.615 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]
+10-07 17:51:12.615 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441] "Jit thread pool worker thread 0" prio=10 tid=2 Native (still starting up)
+10-07 17:51:12.615 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   | group="" sCount=1 dsCount=0 obj=0x0 self=0xa450d000
+10-07 17:51:12.615 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   | sysTid=10185 nice=9 cgrp=default sched=0/0 handle=0xaa8a6920
+10-07 17:51:12.615 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   | state=S schedstat=( 964031619 491095467 1047 ) utm=68 stm=27 core=4 HZ=100
+10-07 17:51:12.615 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   | stack=0xaa7a8000-0xaa7aa000 stackSize=1022KB
+10-07 17:51:12.615 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   | held mutexes=
+10-07 17:51:12.615 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #00 pc 000174b4  /system/lib/libc.so (syscall+28)
+10-07 17:51:12.615 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #01 pc 000b653d  /system/lib/libart.so (_ZN3art17ConditionVariable16WaitHoldingLocksEPNS_6ThreadE+92)
+10-07 17:51:12.615 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #02 pc 003425d9  /system/lib/libart.so (_ZN3art10ThreadPool7GetTaskEPNS_6ThreadE+160)
+10-07 17:51:12.615 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #03 pc 00341e03  /system/lib/libart.so (_ZN3art16ThreadPoolWorker3RunEv+62)
+10-07 17:51:12.615 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #04 pc 00341931  /system/lib/libart.so (_ZN3art16ThreadPoolWorker8CallbackEPv+64)
+10-07 17:51:12.615 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #05 pc 00046eb3  /system/lib/libc.so (_ZL15__pthread_startPv+22)
+10-07 17:51:12.615 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #06 pc 00019acd  /system/lib/libc.so (__start_thread+6)
+10-07 17:51:12.615 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   (no managed stack frames)
+10-07 17:51:12.615 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]
+10-07 17:51:12.615 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441] "Signal Catcher" prio=10 tid=3 WaitingInMainSignalCatcherLoop
+10-07 17:51:12.615 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   | group="" sCount=1 dsCount=0 obj=0x12c00160 self=0xa1b46200
+10-07 17:51:12.615 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   | sysTid=10186 nice=0 cgrp=default sched=0/0 handle=0xaa7a5920
+10-07 17:51:12.615 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   | state=S schedstat=( 872084 421458 3 ) utm=0 stm=0 core=5 HZ=100
+10-07 17:51:12.615 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   | stack=0xaa6a9000-0xaa6ab000 stackSize=1014KB
+10-07 17:51:12.615 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   | held mutexes=
+10-07 17:51:12.615 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #00 pc 00048694  /system/lib/libc.so (__rt_sigtimedwait+12)
+10-07 17:51:12.615 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #01 pc 0001dedb  /system/lib/libc.so (sigwait+34)
+10-07 17:51:12.615 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #02 pc 0032539f  /system/lib/libart.so (_ZN3art9SignalSet4WaitEv+22)
+10-07 17:51:12.615 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #03 pc 00324f99  /system/lib/libart.so (_ZN3art13SignalCatcher13WaitForSignalEPNS_6ThreadERNS_9SignalSetE+168)
+10-07 17:51:12.615 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #04 pc 00323cf9  /system/lib/libart.so (_ZN3art13SignalCatcher3RunEPv+284)
+10-07 17:51:12.615 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #05 pc 00046eb3  /system/lib/libc.so (_ZL15__pthread_startPv+22)
+10-07 17:51:12.615 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #06 pc 00019acd  /system/lib/libc.so (__start_thread+6)
+10-07 17:51:12.615 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   (no managed stack frames)
+10-07 17:51:12.615 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]
+10-07 17:51:12.615 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441] "JDWP" prio=10 tid=4 WaitingInMainDebuggerLoop
+10-07 17:51:12.615 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   | group="" sCount=1 dsCount=0 obj=0x12c000d0 self=0xa450e400
+10-07 17:51:12.615 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   | sysTid=10187 nice=0 cgrp=default sched=0/0 handle=0xaa6a6920
+10-07 17:51:12.615 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   | state=S schedstat=( 4339273 13340156 22 ) utm=0 stm=0 core=1 HZ=100
+10-07 17:51:12.615 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   | stack=0xaa5aa000-0xaa5ac000 stackSize=1014KB
+10-07 17:51:12.615 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   | held mutexes=
+10-07 17:51:12.615 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #00 pc 0004856c  /system/lib/libc.so (__pselect6+20)
+10-07 17:51:12.615 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #01 pc 0001ccd5  /system/lib/libc.so (select+88)
+10-07 17:51:12.615 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #02 pc 003f9967  /system/lib/libart.so (_ZN3art4JDWP12JdwpAdbState15ProcessIncomingEv+302)
+10-07 17:51:12.615 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #03 pc 00247e4f  /system/lib/libart.so (_ZN3art4JDWP9JdwpState3RunEv+650)
+10-07 17:51:12.615 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #04 pc 002475f3  /system/lib/libart.so (_ZN3art4JDWPL15StartJdwpThreadEPv+22)
+10-07 17:51:12.615 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #05 pc 00046eb3  /system/lib/libc.so (_ZL15__pthread_startPv+22)
+10-07 17:51:12.615 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #06 pc 00019acd  /system/lib/libc.so (__start_thread+6)
+10-07 17:51:12.615 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   (no managed stack frames)
+10-07 17:51:12.616 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]
+10-07 17:51:12.616 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441] "ReferenceQueueDaemon" prio=10 tid=5 Waiting
+10-07 17:51:12.616 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   | group="" sCount=1 dsCount=0 obj=0x12c230d0 self=0xa1b47b00
+10-07 17:51:12.616 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   | sysTid=10188 nice=0 cgrp=default sched=0/0 handle=0xaa5a7920
+10-07 17:51:12.616 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   | state=S schedstat=( 13599789 23921092 104 ) utm=0 stm=0 core=4 HZ=100
+10-07 17:51:12.616 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   | stack=0xaa4a5000-0xaa4a7000 stackSize=1038KB
+10-07 17:51:12.616 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   | held mutexes=
+10-07 17:51:12.616 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #00 pc 000174b4  /system/lib/libc.so (syscall+28)
+10-07 17:51:12.616 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #01 pc 000b653d  /system/lib/libart.so (_ZN3art17ConditionVariable16WaitHoldingLocksEPNS_6ThreadE+92)
+10-07 17:51:12.616 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #02 pc 0029e697  /system/lib/libart.so (_ZN3art7Monitor4WaitEPNS_6ThreadExibNS_11ThreadStateE+534)
+10-07 17:51:12.616 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #03 pc 0029fe17  /system/lib/libart.so (_ZN3art7Monitor4WaitEPNS_6ThreadEPNS_6mirror6ObjectExibNS_11ThreadStateE+258)
+10-07 17:51:12.616 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #04 pc 002ae527  /system/lib/libart.so (_ZN3artL11Object_waitEP7_JNIEnvP8_jobject+32)
+10-07 17:51:12.616 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #05 pc 00000557  /system/framework/arm/boot.oat (Java_java_lang_Object_wait__+74)
+10-07 17:51:12.616 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at java.lang.Object.wait!(Native method)
+10-07 17:51:12.616 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   - waiting on <0x05c802e6> (a java.lang.Class<java.lang.ref.ReferenceQueue>)
+10-07 17:51:12.616 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at java.lang.Daemons$ReferenceQueueDaemon.run(Daemons.java:150)
+10-07 17:51:12.616 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   - locked <0x05c802e6> (a java.lang.Class<java.lang.ref.ReferenceQueue>)
+10-07 17:51:12.616 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at java.lang.Thread.run(Thread.java:761)
+10-07 17:51:12.616 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]
+10-07 17:51:12.616 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441] "FinalizerDaemon" prio=10 tid=6 Waiting
+10-07 17:51:12.616 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   | group="" sCount=1 dsCount=0 obj=0x12c23160 self=0xab185e00
+10-07 17:51:12.616 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   | sysTid=10189 nice=0 cgrp=default sched=0/0 handle=0xaa4a2920
+10-07 17:51:12.616 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   | state=S schedstat=( 90988592 33287448 178 ) utm=7 stm=1 core=7 HZ=100
+10-07 17:51:12.616 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   | stack=0xaa3a0000-0xaa3a2000 stackSize=1038KB
+10-07 17:51:12.616 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   | held mutexes=
+10-07 17:51:12.616 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #00 pc 000174b4  /system/lib/libc.so (syscall+28)
+10-07 17:51:12.616 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #01 pc 000b653d  /system/lib/libart.so (_ZN3art17ConditionVariable16WaitHoldingLocksEPNS_6ThreadE+92)
+10-07 17:51:12.616 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #02 pc 0029e697  /system/lib/libart.so (_ZN3art7Monitor4WaitEPNS_6ThreadExibNS_11ThreadStateE+534)
+10-07 17:51:12.616 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #03 pc 0029fe17  /system/lib/libart.so (_ZN3art7Monitor4WaitEPNS_6ThreadEPNS_6mirror6ObjectExibNS_11ThreadStateE+258)
+10-07 17:51:12.616 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #04 pc 002ae553  /system/lib/libart.so (_ZN3artL13Object_waitJIEP7_JNIEnvP8_jobjectxi+36)
+10-07 17:51:12.616 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #05 pc 00000655  /system/framework/arm/boot.oat (Java_java_lang_Object_wait__JI+96)
+10-07 17:51:12.616 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at java.lang.Object.wait!(Native method)
+10-07 17:51:12.616 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   - waiting on <0x0aef8027> (a java.lang.Object)
+10-07 17:51:12.616 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at java.lang.Object.wait(Object.java:407)
+10-07 17:51:12.616 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:188)
+10-07 17:51:12.616 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   - locked <0x0aef8027> (a java.lang.Object)
+10-07 17:51:12.616 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:209)
+10-07 17:51:12.616 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at java.lang.Daemons$FinalizerDaemon.run(Daemons.java:204)
+10-07 17:51:12.616 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at java.lang.Thread.run(Thread.java:761)
+10-07 17:51:12.616 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]
+10-07 17:51:12.616 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441] "HeapTaskDaemon" prio=10 tid=7 Blocked
+10-07 17:51:12.616 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   | group="" sCount=1 dsCount=0 obj=0x12c23280 self=0xab186800
+10-07 17:51:12.616 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   | sysTid=10191 nice=0 cgrp=default sched=0/0 handle=0xaa298920
+10-07 17:51:12.616 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   | state=S schedstat=( 425049476 96770219 423 ) utm=32 stm=9 core=5 HZ=100
+10-07 17:51:12.616 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   | stack=0xaa196000-0xaa198000 stackSize=1038KB
+10-07 17:51:12.616 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   | held mutexes=
+10-07 17:51:12.616 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #00 pc 000174b8  /system/lib/libc.so (syscall+32)
+10-07 17:51:12.616 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #01 pc 000b6965  /system/lib/libart.so (_ZN3art17ConditionVariable9TimedWaitEPNS_6ThreadExi+108)
+10-07 17:51:12.616 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #02 pc 001b37f9  /system/lib/libart.so (_ZN3art2gc13TaskProcessor7GetTaskEPNS_6ThreadE+228)
+10-07 17:51:12.616 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #03 pc 001b3ead  /system/lib/libart.so (_ZN3art2gc13TaskProcessor11RunAllTasksEPNS_6ThreadE+44)
+10-07 17:51:12.616 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #04 pc 001603bf  /system/framework/arm/boot-core-libart.oat (Java_dalvik_system_VMRuntime_runHeapTasks__+74)
+10-07 17:51:12.616 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at dalvik.system.VMRuntime.runHeapTasks(Native method)
+10-07 17:51:12.616 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   - waiting to lock an unknown object
+10-07 17:51:12.616 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at java.lang.Daemons$HeapTaskDaemon.run(Daemons.java:433)
+10-07 17:51:12.616 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at java.lang.Thread.run(Thread.java:761)
+10-07 17:51:12.616 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]
+10-07 17:51:12.616 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441] "Binder:10180_1" prio=10 tid=8 Native
+10-07 17:51:12.616 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   | group="" sCount=1 dsCount=0 obj=0x12c233a0 self=0xa450f800
+10-07 17:51:12.616 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   | sysTid=10192 nice=0 cgrp=default sched=0/0 handle=0xaa095920
+10-07 17:51:12.616 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   | state=S schedstat=( 27551815 123232808 270 ) utm=0 stm=1 core=7 HZ=100
+10-07 17:51:12.616 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   | stack=0xa9f99000-0xa9f9b000 stackSize=1014KB
+10-07 17:51:12.616 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   | held mutexes=
+10-07 17:51:12.616 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #00 pc 00048468  /system/lib/libc.so (__ioctl+8)
+10-07 17:51:12.616 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #01 pc 0001aacf  /system/lib/libc.so (ioctl+38)
+10-07 17:51:12.616 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #02 pc 0003cd65  /system/lib/libbinder.so (_ZN7android14IPCThreadState14talkWithDriverEb+168)
+10-07 17:51:12.616 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #03 pc 0003ce5d  /system/lib/libbinder.so (_ZN7android14IPCThreadState20getAndExecuteCommandEv+8)
+10-07 17:51:12.616 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #04 pc 0003d3e3  /system/lib/libbinder.so (_ZN7android14IPCThreadState14joinThreadPoolEb+46)
+10-07 17:51:12.616 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #05 pc 0004f819  /system/lib/libbinder.so (???)
+10-07 17:51:12.616 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #06 pc 0000e361  /system/lib/libutils.so (_ZN7android6Thread11_threadLoopEPv+140)
+10-07 17:51:12.616 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #07 pc 00064e61  /system/lib/libandroid_runtime.so (_ZN7android14AndroidRuntime15javaThreadShellEPv+80)
+10-07 17:51:12.616 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #08 pc 00046eb3  /system/lib/libc.so (_ZL15__pthread_startPv+22)
+10-07 17:51:12.616 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #09 pc 00019acd  /system/lib/libc.so (__start_thread+6)
+10-07 17:51:12.616 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   (no managed stack frames)
+10-07 17:51:12.616 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]
+10-07 17:51:12.616 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441] "FinalizerWatchdogDaemon" prio=10 tid=9 Sleeping
+10-07 17:51:12.616 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   | group="" sCount=1 dsCount=0 obj=0x12c231f0 self=0xab186300
+10-07 17:51:12.616 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   | sysTid=10190 nice=0 cgrp=default sched=0/0 handle=0xaa39d920
+10-07 17:51:12.616 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   | state=S schedstat=( 724166 11274168 9 ) utm=0 stm=0 core=5 HZ=100
+10-07 17:51:12.616 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   | stack=0xaa29b000-0xaa29d000 stackSize=1038KB
+10-07 17:51:12.616 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   | held mutexes=
+10-07 17:51:12.616 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #00 pc 000174b8  /system/lib/libc.so (syscall+32)
+10-07 17:51:12.616 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #01 pc 000b6965  /system/lib/libart.so (_ZN3art17ConditionVariable9TimedWaitEPNS_6ThreadExi+108)
+10-07 17:51:12.616 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #02 pc 0029e6a9  /system/lib/libart.so (_ZN3art7Monitor4WaitEPNS_6ThreadExibNS_11ThreadStateE+552)
+10-07 17:51:12.616 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #03 pc 0029fe17  /system/lib/libart.so (_ZN3art7Monitor4WaitEPNS_6ThreadEPNS_6mirror6ObjectExibNS_11ThreadStateE+258)
+10-07 17:51:12.616 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #04 pc 002b2ed9  /system/lib/libart.so (_ZN3artL12Thread_sleepEP7_JNIEnvP7_jclassP8_jobjectxi+56)
+10-07 17:51:12.616 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #05 pc 00088693  /system/framework/arm/boot.oat (Java_java_lang_Thread_sleep__Ljava_lang_Object_2JI+126)
+10-07 17:51:12.616 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at java.lang.Thread.sleep!(Native method)
+10-07 17:51:12.616 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   - sleeping on <0x062fa2d4> (a java.lang.Object)
+10-07 17:51:12.616 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at java.lang.Thread.sleep(Thread.java:371)
+10-07 17:51:12.616 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   - locked <0x062fa2d4> (a java.lang.Object)
+10-07 17:51:12.616 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at java.lang.Thread.sleep(Thread.java:313)
+10-07 17:51:12.616 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at java.lang.Daemons$FinalizerWatchdogDaemon.sleepFor(Daemons.java:314)
+10-07 17:51:12.616 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at java.lang.Daemons$FinalizerWatchdogDaemon.waitForFinalization(Daemons.java:336)
+10-07 17:51:12.616 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at java.lang.Daemons$FinalizerWatchdogDaemon.run(Daemons.java:253)
+10-07 17:51:12.616 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at java.lang.Thread.run(Thread.java:761)
+10-07 17:51:12.616 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]
+10-07 17:51:12.616 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441] "Binder:10180_2" prio=10 tid=10 Native
+10-07 17:51:12.616 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   | group="" sCount=1 dsCount=0 obj=0x12c235e0 self=0xa4510c00
+10-07 17:51:12.616 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   | sysTid=10193 nice=0 cgrp=default sched=0/0 handle=0xa47da920
+10-07 17:51:12.616 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   | state=S schedstat=( 30263900 121134479 266 ) utm=1 stm=1 core=4 HZ=100
+10-07 17:51:12.616 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   | stack=0xa46de000-0xa46e0000 stackSize=1014KB
+10-07 17:51:12.616 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   | held mutexes=
+10-07 17:51:12.616 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #00 pc 00048468  /system/lib/libc.so (__ioctl+8)
+10-07 17:51:12.616 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #01 pc 0001aacf  /system/lib/libc.so (ioctl+38)
+10-07 17:51:12.617 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #02 pc 0003cd65  /system/lib/libbinder.so (_ZN7android14IPCThreadState14talkWithDriverEb+168)
+10-07 17:51:12.617 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #03 pc 0003ce5d  /system/lib/libbinder.so (_ZN7android14IPCThreadState20getAndExecuteCommandEv+8)
+10-07 17:51:12.617 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #04 pc 0003d3e3  /system/lib/libbinder.so (_ZN7android14IPCThreadState14joinThreadPoolEb+46)
+10-07 17:51:12.617 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #05 pc 0004f819  /system/lib/libbinder.so (???)
+10-07 17:51:12.617 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #06 pc 0000e361  /system/lib/libutils.so (_ZN7android6Thread11_threadLoopEPv+140)
+10-07 17:51:12.617 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #07 pc 00064e61  /system/lib/libandroid_runtime.so (_ZN7android14AndroidRuntime15javaThreadShellEPv+80)
+10-07 17:51:12.617 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #08 pc 00046eb3  /system/lib/libc.so (_ZL15__pthread_startPv+22)
+10-07 17:51:12.617 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #09 pc 00019acd  /system/lib/libc.so (__start_thread+6)
+10-07 17:51:12.617 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   (no managed stack frames)
+10-07 17:51:12.617 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]
+10-07 17:51:12.617 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441] "Profile Saver" prio=10 tid=11 Native
+10-07 17:51:12.617 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   | group="" sCount=1 dsCount=0 obj=0x12c23a60 self=0xa1a71000
+10-07 17:51:12.617 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   | sysTid=10195 nice=-10 cgrp=default sched=0/0 handle=0xa44ff920
+10-07 17:51:12.617 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   | state=S schedstat=( 8779012 1264634 16 ) utm=0 stm=0 core=4 HZ=100
+10-07 17:51:12.617 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   | stack=0xa4403000-0xa4405000 stackSize=1014KB
+10-07 17:51:12.617 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   | held mutexes=
+10-07 17:51:12.617 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #00 pc 000174b4  /system/lib/libc.so (syscall+28)
+10-07 17:51:12.617 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #01 pc 000b653d  /system/lib/libart.so (_ZN3art17ConditionVariable16WaitHoldingLocksEPNS_6ThreadE+92)
+10-07 17:51:12.617 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #02 pc 00259135  /system/lib/libart.so (_ZN3art12ProfileSaver3RunEv+296)
+10-07 17:51:12.617 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #03 pc 0025a471  /system/lib/libart.so (_ZN3art12ProfileSaver21RunProfileSaverThreadEPv+52)
+10-07 17:51:12.617 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #04 pc 00046eb3  /system/lib/libc.so (_ZL15__pthread_startPv+22)
+10-07 17:51:12.617 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #05 pc 00019acd  /system/lib/libc.so (__start_thread+6)
+10-07 17:51:12.617 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   (no managed stack frames)
+10-07 17:51:12.617 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]
+10-07 17:51:12.617 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441] "RenderThread" prio=10 tid=13 Native
+10-07 17:51:12.617 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   | group="" sCount=1 dsCount=0 obj=0x12d55ee0 self=0xa43ba000
+10-07 17:51:12.617 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   | sysTid=10199 nice=-10 cgrp=default sched=0/0 handle=0x930e5920
+10-07 17:51:12.617 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   | state=S schedstat=( 3293745747 431086627 2905 ) utm=237 stm=91 core=6 HZ=100
+10-07 17:51:12.617 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   | stack=0x92fe9000-0x92feb000 stackSize=1014KB
+10-07 17:51:12.617 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   | held mutexes=
+10-07 17:51:12.617 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #00 pc 00048328  /system/lib/libc.so (__epoll_pwait+20)
+10-07 17:51:12.617 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #01 pc 00019e7d  /system/lib/libc.so (epoll_pwait+60)
+10-07 17:51:12.617 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #02 pc 00019ead  /system/lib/libc.so (epoll_wait+12)
+10-07 17:51:12.617 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #03 pc 00011c9f  /system/lib/libutils.so (_ZN7android6Looper9pollInnerEi+118)
+10-07 17:51:12.617 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #04 pc 00011b9b  /system/lib/libutils.so (_ZN7android6Looper8pollOnceEiPiS1_PPv+26)
+10-07 17:51:12.617 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #05 pc 00028275  /system/lib/libhwui.so (_ZN7android10uirenderer12renderthread12RenderThread10threadLoopEv+284)
+10-07 17:51:12.617 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #06 pc 0000e361  /system/lib/libutils.so (_ZN7android6Thread11_threadLoopEPv+140)
+10-07 17:51:12.617 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #07 pc 00064e61  /system/lib/libandroid_runtime.so (_ZN7android14AndroidRuntime15javaThreadShellEPv+80)
+10-07 17:51:12.617 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #08 pc 00046eb3  /system/lib/libc.so (_ZL15__pthread_startPv+22)
+10-07 17:51:12.617 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #09 pc 00019acd  /system/lib/libc.so (__start_thread+6)
+10-07 17:51:12.617 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   (no managed stack frames)
+10-07 17:51:12.617 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]
+10-07 17:51:12.617 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441] "AsyncTask #1" prio=10 tid=14 TimedWaiting
+10-07 17:51:12.617 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   | group="" sCount=1 dsCount=0 obj=0x12d55f70 self=0xa1a74200
+10-07 17:51:12.617 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   | sysTid=10200 nice=0 cgrp=default sched=0/0 handle=0x92b4e920
+10-07 17:51:12.617 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   | state=S schedstat=( 1428593 4438751 8 ) utm=0 stm=0 core=7 HZ=100
+10-07 17:51:12.617 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   | stack=0x92a4c000-0x92a4e000 stackSize=1038KB
+10-07 17:51:12.617 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   | held mutexes=
+10-07 17:51:12.617 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #00 pc 000174b8  /system/lib/libc.so (syscall+32)
+10-07 17:51:12.617 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #01 pc 000b6965  /system/lib/libart.so (_ZN3art17ConditionVariable9TimedWaitEPNS_6ThreadExi+108)
+10-07 17:51:12.617 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #02 pc 0029e6a9  /system/lib/libart.so (_ZN3art7Monitor4WaitEPNS_6ThreadExibNS_11ThreadStateE+552)
+10-07 17:51:12.617 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #03 pc 0029fe17  /system/lib/libart.so (_ZN3art7Monitor4WaitEPNS_6ThreadEPNS_6mirror6ObjectExibNS_11ThreadStateE+258)
+10-07 17:51:12.617 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #04 pc 002ae553  /system/lib/libart.so (_ZN3artL13Object_waitJIEP7_JNIEnvP8_jobjectxi+36)
+10-07 17:51:12.617 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #05 pc 00000655  /system/framework/arm/boot.oat (Java_java_lang_Object_wait__JI+96)
+10-07 17:51:12.617 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at java.lang.Object.wait!(Native method)
+10-07 17:51:12.617 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   - waiting on <0x09dd1c7d> (a java.lang.Object)
+10-07 17:51:12.617 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at java.lang.Thread.parkFor$(Thread.java:2127)
+10-07 17:51:12.617 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   - locked <0x09dd1c7d> (a java.lang.Object)
+10-07 17:51:12.617 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at sun.misc.Unsafe.park(Unsafe.java:325)
+10-07 17:51:12.617 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:201)
+10-07 17:51:12.617 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2077)
+10-07 17:51:12.617 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:438)
+10-07 17:51:12.617 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1057)
+10-07 17:51:12.617 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1118)
+10-07 17:51:12.617 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:607)
+10-07 17:51:12.617 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at java.lang.Thread.run(Thread.java:761)
+10-07 17:51:12.617 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]
+10-07 17:51:12.617 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441] "AsyncTask #2" prio=10 tid=15 TimedWaiting
+10-07 17:51:12.617 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   | group="" sCount=1 dsCount=0 obj=0x12d9a0d0 self=0xa456a000
+10-07 17:51:12.617 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   | sysTid=10201 nice=0 cgrp=default sched=0/0 handle=0x92a49920
+10-07 17:51:12.617 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   | state=S schedstat=( 888228 1956042 7 ) utm=0 stm=0 core=6 HZ=100
+10-07 17:51:12.617 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   | held mutexes=
+10-07 17:51:12.617 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #00 pc 000174b8  /system/lib/libc.so (syscall+32)
+10-07 17:51:12.617 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #01 pc 000b6965  /system/lib/libart.so (_ZN3art17ConditionVariable9TimedWaitEPNS_6ThreadExi+108)
+10-07 17:51:12.617 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #02 pc 0029e6a9  /system/lib/libart.so (_ZN3art7Monitor4WaitEPNS_6ThreadExibNS_11ThreadStateE+552)
+10-07 17:51:12.617 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #03 pc 0029fe17  /system/lib/libart.so (_ZN3art7Monitor4WaitEPNS_6ThreadEPNS_6mirror6ObjectExibNS_11ThreadStateE+258)
+10-07 17:51:12.617 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #04 pc 002ae553  /system/lib/libart.so (_ZN3artL13Object_waitJIEP7_JNIEnvP8_jobjectxi+36)
+10-07 17:51:12.617 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #05 pc 00000655  /system/framework/arm/boot.oat (Java_java_lang_Object_wait__JI+96)
+10-07 17:51:12.617 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at java.lang.Object.wait!(Native method)
+10-07 17:51:12.617 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   - waiting on <0x07816772> (a java.lang.Object)
+10-07 17:51:12.617 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at java.lang.Thread.parkFor$(Thread.java:2127)
+10-07 17:51:12.617 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   - locked <0x07816772> (a java.lang.Object)
+10-07 17:51:12.617 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at sun.misc.Unsafe.park(Unsafe.java:325)
+10-07 17:51:12.617 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2077)
+10-07 17:51:12.617 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:438)
+10-07 17:51:12.617 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1057)
+10-07 17:51:12.617 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:607)
+10-07 17:51:12.617 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   at java.lang.Thread.run(Thread.java:761)
+10-07 17:51:12.617 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]
+10-07 17:51:12.617 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441] "hwuiTask1" prio=10 tid=16 Native
+10-07 17:51:12.617 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   | group="" sCount=1 dsCount=0 obj=0x12d9a670 self=0xa456b400
+10-07 17:51:12.617 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   | sysTid=10202 nice=-2 cgrp=default sched=0/0 handle=0x9257f920
+10-07 17:51:12.617 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   | state=S schedstat=( 94260934 140112548 560 ) utm=7 stm=1 core=7 HZ=100
+10-07 17:51:12.617 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   | stack=0x92483000-0x92485000 stackSize=1014KB
+10-07 17:51:12.618 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #00 pc 000174b4  /system/lib/libc.so (syscall+28)
+10-07 17:51:12.618 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #01 pc 00046a3d  /system/lib/libc.so (_ZL24__pthread_cond_timedwaitP23pthread_cond_internal_tP15pthread_mutex_tbPK8timespec+102)
+10-07 17:51:12.618 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #03 pc 00028a89  /system/lib/libhwui.so (???)
+10-07 17:51:12.618 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #04 pc 0000e3dd  /system/lib/libutils.so (_ZN7android6Thread11_threadLoopEPv+264)
+10-07 17:51:12.618 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #05 pc 00064e61  /system/lib/libandroid_runtime.so (_ZN7android14AndroidRuntime15javaThreadShellEPv+80)
+10-07 17:51:12.618 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #06 pc 00046eb3  /system/lib/libc.so (_ZL15__pthread_startPv+22)
+10-07 17:51:12.618 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #07 pc 00019acd  /system/lib/libc.so (__start_thread+6)
+10-07 17:51:12.618 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]
+10-07 17:51:12.618 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441] "hwuiTask2" prio=10 tid=17 Native
+10-07 17:51:12.618 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   | group="" sCount=1 dsCount=0 obj=0x12d9a700 self=0xa434ad00
+10-07 17:51:12.618 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   | sysTid=10203 nice=-2 cgrp=default sched=0/0 handle=0x92480920
+10-07 17:51:12.618 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   | stack=0x92384000-0x92386000 stackSize=1014KB
+10-07 17:51:12.618 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   | held mutexes=
+10-07 17:51:12.618 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #00 pc 000174b4  /system/lib/libc.so (syscall+28)
+10-07 17:51:12.618 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #01 pc 00046a3d  /system/lib/libc.so (_ZL24__pthread_cond_timedwaitP23pthread_cond_internal_tP15pthread_mutex_tbPK8timespec+102)
+10-07 17:51:12.618 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #02 pc 00028b13  /system/lib/libhwui.so (???)
+10-07 17:51:12.618 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #03 pc 00028a89  /system/lib/libhwui.so (???)
+10-07 17:51:12.618 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #05 pc 00064e61  /system/lib/libandroid_runtime.so (_ZN7android14AndroidRuntime15javaThreadShellEPv+80)
+10-07 17:51:12.618 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #06 pc 00046eb3  /system/lib/libc.so (_ZL15__pthread_startPv+22)
+10-07 17:51:12.618 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   native: #07 pc 00019acd  /system/lib/libc.so (__start_thread+6)
+10-07 17:51:12.618 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]
+10-07 17:51:12.618 10180-10180/com.example.android.downloadablefonts A/art: art/runtime/runtime.cc:441]   | stack=0x8e301000-0x8e303000 stackSize=1038KB
+10-07 17:51:12.619 10180-10180/com.example.android.downloadablefonts A/libc: Fatal signal 6 (SIGABRT), code -6 in tid 10180 (wnloadablefonts)
+
+                                                                             [ 10-07 17:51:12.620   392:  392 W/         ]
+                                                                             debuggerd: handling request: pid=10180 uid=11022 gid=11022 tid=10180
